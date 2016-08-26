@@ -8,10 +8,12 @@ import android.provider.BaseColumns;
 /**
  * Created by Evan Anger on 8/17/14.
  */
-public class MemeSQLiteHelper {
+public class MemeSQLiteHelper extends SQLiteOpenHelper  {
 
-    //Meme Table functionality
+    public static final String DB_NAME = "memes.db";
+    public static final int DB_VERSION = 1;
 
-    //Meme Table Annotations functionality
-
+    public MemeSQLiteHelper(Context context) {
+        super(context, DB_NAME, null, DB_VERSION);
+    }
 }

@@ -1,5 +1,6 @@
 package com.teamtreehouse.mememaker;
 
+import android.preference.Preference;
 import android.preference.PreferenceManager;
 
 import com.teamtreehouse.mememaker.utils.FileUtilities;
